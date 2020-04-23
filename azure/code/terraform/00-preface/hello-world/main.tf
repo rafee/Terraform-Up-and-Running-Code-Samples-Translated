@@ -8,9 +8,10 @@ variable "client_secret" {}
 variable "tenant_id" {}
 
 provider "azurerm" {
+  features {}
+
   # Allow any 2.x version of the Azure provider
   version = "~> 2.0"
-  features {}
 
   subscription_id = var.subscription_id
   client_id       = var.client_id
