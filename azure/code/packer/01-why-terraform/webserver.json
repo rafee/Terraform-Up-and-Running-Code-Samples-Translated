@@ -1,21 +1,36 @@
 {
-  "builders": [{
-    "ami_name": "packer-example",
-    "instance_type": "t2.micro",
-    "region": "us-east-2",
-    "type": "amazon-ebs",
-    "source_ami": "ami-0c55b159cbfafe1f0",
-    "ssh_username": "ubuntu"
-  }],
-  "provisioners": [{
-    "type": "shell",
-    "inline": [
-      "sudo apt-get update",
-      "sudo apt-get install -y php apache2",
-      "sudo git clone https://github.com/brikis98/php-app.git /var/www/html/app"
-    ],
-    "environment_vars": [
-      "DEBIAN_FRONTEND=noninteractive"
-    ]
-  }]
+  "variables": {
+    "client_id": "",
+    "client_secret": "",
+    "subscription_id": ""
+  },
+  "builders": [
+    {
+      "managed_image_resource_group_name": "terraform_group",
+      "managed_image_name": "packer-example",
+      "type": "azure-arm",
+      "client_id": "{{user `client_id`}}",
+      "client_secret": "{{user `client_secret`}}",
+      "subscription_id": "{{user `subscription_id`}}",
+      "os_type": "Linux",
+      "image_publisher": "Canonical",
+      "image_offer": "UbuntuServer",
+      "image_sku": "18.04-LTS",
+      "location": "East US",
+      "vm_size": "Standard_B1ms"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "inline": [
+        "sudo apt-get update",
+        "sudo apt-get install -y php apache2",
+        "sudo git clone https://github.com/brikis98/php-app.git /var/www/html/app"
+      ],
+      "environment_vars": [
+        "DEBIAN_FRONTEND=noninteractive"
+      ]
+    }
+  ]
 }

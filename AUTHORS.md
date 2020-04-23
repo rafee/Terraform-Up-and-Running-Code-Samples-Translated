@@ -19,7 +19,7 @@ This file lists the authors involved in the various sections of this projects.
 
 ## Microsoft Azure
 
-None so far :-(
+* Mohammad Ishfaque Jahan Rafee
 
 ## Openstack
 
