@@ -10,6 +10,7 @@ other Cloud providers and this repository aims to translate the code samples of
 Yevgeniy Brikman's book to other providers.
 
 * The `gcloud/` folder contains code for Google Cloud Platform.
+* The `azure/` folder contains code for Azure.
 * The `aws/` folder contains the [terraform-up-and-running-code](https://github.com/brikis98/terraform-up-and-running-code)
   repository as a Git submodule for convenience.
 
