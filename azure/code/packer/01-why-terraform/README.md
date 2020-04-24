@@ -17,7 +17,7 @@ For more info, please see Chapter 1, "Why Terraform", of
 **Please note that this example will deploy real resources into your Azure account. We have made every effort to ensure 
 all the resources qualify for the [Azure Free Tier](https://azure.microsoft.com/en-ca/free/), but we are not responsible for any
 charges you may incur.** 
-* Create a terraform.tfvars file in each folder when running terraform examples. The tfvars file will contain *subscription_id*, *tenant_id*, *client_id* and *client_secret*. A sample tfvars is added to [code/terraform folder](./code/terraform). To get these values follow terraform article for
+* Create a terraform.tfvars file in each folder when running terraform examples. The tfvars file will contain *subscription_id*, *tenant_id*, *client_id* and *client_secret*. A sample tfvars is added to [code/terraform folder](../terraform). To get these values follow terraform article for
   [Azure Provider](https://www.terraform.io/docs/providers/azurerm/guides/service_principal_client_secret.html). Although the article suggests setting environment variables, but setting up terraform variables makes it more visible and changeable if necessary. Detailed use of variables is explained later in the book.
 
 * Configure your [Azure Credentials](https://www.terraform.io/docs/providers/azurerm/guides/service_principal_client_secret.html) in a variables.json file by modifying sample.json file. 

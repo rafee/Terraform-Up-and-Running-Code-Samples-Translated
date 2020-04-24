@@ -18,7 +18,7 @@ Please note that this code was written for Terraform 0.12.x.
 all the resources qualify for the [Azure Free Tier](https://azure.microsoft.com/en-ca/free/), but we are not responsible for any
 charges you may incur.** 
 
-* Create a terraform.tfvars file when running terraform examples. The tfvars file will contain *subscription_id*, *tenant_id*, *client_id* and *client_secret*. A sample tfvars is added to [code/terraform folder](..). To get these values follow terraform article for
+* Create a terraform.tfvars file when running terraform examples. The tfvars file will contain *subscription_id*, *tenant_id*, *client_id* and *client_secret*. A sample tfvars is added to [code/terraform folder](../..). To get these values follow terraform article for
   [Azure Provider](https://www.terraform.io/docs/providers/azurerm/guides/service_principal_client_secret.html). Although the article suggests setting environment variables, but setting up terraform variables makes it more visible and changeable if necessary. Detailed use of variables is explained later in the book.
 
 Deploy the code:
