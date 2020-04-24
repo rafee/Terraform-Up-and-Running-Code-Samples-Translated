@@ -16,8 +16,8 @@
       "image_publisher": "Canonical",
       "image_offer": "UbuntuServer",
       "image_sku": "18.04-LTS",
-      "location": "East US",
-      "vm_size": "Standard_B1ms"
+      "location": "eastus",
+      "vm_size": "Standard_B1s"
     }
   ],
   "provisioners": [

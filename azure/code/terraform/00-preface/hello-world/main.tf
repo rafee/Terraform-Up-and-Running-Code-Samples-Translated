@@ -60,7 +60,7 @@ resource "azurerm_linux_virtual_machine" "example" {
   location              = "eastus"
   resource_group_name   = azurerm_resource_group.terraform_group.name
   network_interface_ids = [azurerm_network_interface.terraform_nic.id]
-  size                  = "Standard_B1ms"
+  size                  = "Standard_B1s"
 
   os_disk {
     caching              = "ReadWrite"
